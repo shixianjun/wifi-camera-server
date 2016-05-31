@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   android:id="@+id/widget0"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+   <TextView
+      android:id="@+id/myText1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:text="电子罗盘数据"
+   />
+   <SeekBar android:id="@+id/seekBarPWM"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content"
+         android:paddingLeft="16px" 
+         android:paddingRight="15px"
+         android:layout_marginTop="20px"
+         android:layout_below="@id/myText1"
+         android:layout_centerHorizontal="true"
+         android:max="100" 
+         android:progress="50"         
+         android:secondaryProgress="75" />  
+
+   <Button
+      android:id="@+id/btnF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/seekBarPWM"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="10dip"
+      android:text="前进"
+   />
+   <Button
+      android:id="@+id/btnL"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/btnS"
+      android:layout_below="@+id/btnF"
+      android:layout_margin="10dip"
+      android:text="左转"
+   />
+   <Button
+      android:id="@+id/btnR"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/btnS"
+      android:layout_below="@+id/btnF"
+      android:layout_margin="10dip"
+      android:text="右转"
+   />
+   <Button
+      android:id="@+id/btnS"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_below="@+id/btnF"
+      android:layout_margin="10dip"
+      android:text="停止"
+   />
+   <Button
+      android:id="@+id/btnB"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btnS"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="10dip"
+      android:text="后退"
+   />
+   <SeekBar android:id="@+id/seekBarS"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content"
+         android:paddingLeft="16px" 
+         android:paddingRight="15px"
+         android:layout_marginTop="20px"
+         android:layout_below="@+id/btnB"
+         android:layout_centerHorizontal="true"
+         android:max="180" 
+         android:progress="90"         
+         android:secondaryProgress="110" />  
+   <Button
+      android:id="@+id/btnAuto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/seekBarS"
+      android:layout_margin="10dip"
+      android:text="舵机转动"
+   />
+  <Button
+      android:id="@+id/btnSend1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/seekBarS"
+      android:layout_toRightOf="@+id/btnAuto"
+      android:layout_margin="10dip"
+      android:text="启动测距"
+   />
+   <TextView
+      android:id="@+id/recText1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btnAuto"
+      android:text="接收的数据:"
+   />
+   
+   <TextView
+        android:id="@+id/textView_history_content1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/recText1" />
+
+
+    <EditText
+        android:id="@+id/EditText_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10" />
+</RelativeLayout>

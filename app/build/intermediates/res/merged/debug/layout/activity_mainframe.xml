@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/status_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <!--
+              ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scaleType="center"
+            android:src="@drawable/actionbar_back" />
+        -->
+
+        <TextView
+            android:id="@+id/sellermain_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_item_container_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp" >
+
+        <FrameLayout
+            android:id="@+id/tab_iv_seller0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab_image_seller0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:text="遥控"
+                android:textColor="@drawable/icon_special"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/red_mark_seller0"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tab_iv_seller1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab_image_seller1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:text="视频"
+                android:textColor="@drawable/icon_special"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/red_mark_seller1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tab_iv_seller2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab_image_seller2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:text="设置"
+                android:textColor="@drawable/icon_special"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/red_mark_seller2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.1dp"
+        android:layout_above="@+id/tab_item_container_seller" />
+
+    <FrameLayout
+        android:id="@+id/lay_content_container_seller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_line"
+        android:layout_below="@+id/status_bar"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+</RelativeLayout>

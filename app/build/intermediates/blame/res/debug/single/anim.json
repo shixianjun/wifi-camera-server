@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "F:\\workspace_studio\\SocketServer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_out_top.xml"
+    }
+]

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText_ip"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_toRightOf="@+id/TextView_ip_tips"-->
+    <!--android:ems="10"-->
+    <!--android:text="192.168.1.232" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/take_pahoto_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:text="拍照相关" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+        <Button
+            android:id="@+id/button_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox_server_start"
+            android:text="聚焦" />
+        <Button
+            android:id="@+id/button_takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照" />
+
+        <Button
+            android:id="@+id/button_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox_server_start"
+            android:enabled="false"
+            android:text="闪光灯" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/play_music_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:text="播放相关" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+    <Button
+        android:id="@+id/button_playsong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox_server_start"
+        android:text="播放音乐" />
+
+    <Button
+        android:id="@+id/button_playstory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox_server_start"
+        android:layout_toRightOf="@+id/button_playsong"
+        android:text="播放故事" />
+
+    <Button
+        android:id="@+id/button_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox_server_start"
+        android:layout_toRightOf="@+id/button_playstory"
+        android:text="暂停" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:text="控制相关" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_joystick"
+        android:layout_width="@dimen/controller_size"
+        android:layout_height="@dimen/controller_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/image_button_bg" >
+    </RelativeLayout>
+    <!--<EditText-->
+    <!--android:id="@+id/EditText_port"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/editText_ip"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_toRightOf="@+id/textView_port_tips"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="number"-->
+    <!--android:text="8888" >-->
+
+    <!--<requestFocus />-->
+    <!--</EditText>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView_port_tips"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/EditText_port"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:text="输入端口号:" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView_history_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="350dp"-->
+        <!--android:layout_below="@+id/checkBox_server_start" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_send"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toRightOf="@+id/EditText_content"-->
+        <!--android:text="发送" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/EditText_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:ems="10" />-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/checkBox_server_start"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_below="@+id/EditText_port"-->
+    <!--android:layout_marginLeft="24dp"-->
+    <!--android:checked="false"-->
+    <!--android:text="开启发送模式" />-->
+
+
+
+</LinearLayout>
