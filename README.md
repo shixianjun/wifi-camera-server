@@ -3,6 +3,8 @@ the server, two android device can connect in the same wifi,andthe server can co
 
 Developed By  Shixianjun - 362639788@qq.com
 
+the client url: https://github.com/shixianjun/wifi-camera-client
+
 Feature
 
 
