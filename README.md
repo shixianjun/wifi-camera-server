@@ -11,6 +11,8 @@ after the tow devices connect to wifi，then run app，they will connect togethe
 
 the controler device app can colose and re-open， and the client app  keep running. when the controler app reopen,the connection will be rebuild.
 
+Screenshot
+https://github.com/shixianjun/wifi-camera-server/blob/master/pic/649081208119610046.jpg
 
 License
 
