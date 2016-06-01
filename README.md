@@ -7,6 +7,10 @@ the client url: https://github.com/shixianjun/wifi-camera-client
 
 Feature
 
+after the tow devices connect to wifi，then run app，they will connect together automatic。
+
+the controler device app can colose and re-open， and the client app  keep running. when the controler app reopen,the connection will be rebuild.
+
 
 License
 
