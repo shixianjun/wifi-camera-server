@@ -59,7 +59,7 @@ public class JoyStickManager implements View.OnTouchListener {
     public void getJoyStickDirection() {
         int direction = joystick.get8Direction();
         int speed = (int) (joystick.getDistance() / 1.875) + 20;
-        speed = (speed > 100) ? 100 : speed;
+        speed = (speed > 80) ? 80 : speed;
         speed = (speed < 0) ? 0 : speed;
 
         if (listener != null) {

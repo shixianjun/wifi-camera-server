@@ -1,4 +1,2 @@
-CHANGED,F:\workspace_studio\SocketServer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\socketserver\MainSellerActivity$override.class
-CHANGED,F:\workspace_studio\SocketServer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\socketserver\frame\HomeControl$override.class
+CHANGED,F:\workspace_studio\SocketServer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\socketserver\utils\JoyStickManager$override.class
 CHANGED,F:\workspace_studio\SocketServer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,F:\workspace_studio\SocketServer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\socketserver\MainSellerActivity$1$override.class

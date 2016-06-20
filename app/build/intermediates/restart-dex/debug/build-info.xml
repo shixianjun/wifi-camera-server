@@ -4,20 +4,20 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="372974627377660" >
+    timestamp="24031459099491" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="587" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="15" />
     <task
         name="verifier"
-        duration="0" />
+        duration="8" />
 
     <artifact
         location="F:\workspace_studio\SocketServer\app\build\outputs\apk\app-debug.apk"
