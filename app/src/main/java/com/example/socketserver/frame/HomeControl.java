@@ -130,6 +130,13 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
         button_buttonfocus = (Button) activity.findViewById(R.id.button_focus);
         button_take_photo = (Button) activity.findViewById(R.id.button_takephoto);
         button_button_flash = (Button) activity.findViewById(R.id.button_flash);
+        //car_stop = (Button) activity.findViewById(R.id.car_stop);
+
+        button_buttonfocus.setOnClickListener(this);
+        button_take_photo.setOnClickListener(this);
+        button_button_flash.setOnClickListener(this);
+        //car_stop.setOnClickListener(this);
+
 
         button_buttonfocus.setOnClickListener(this);
         button_take_photo.setOnClickListener(this);
@@ -175,6 +182,9 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
             case R.id.button_takephoto:
                 activity.requestTakePhoto();
                 break;
+            //case R.id.car_stop:
+             //   activity.sendStop();
+             //   break;
             case R.id.button_flash:
 //				activity.requstFlash();
                 break;

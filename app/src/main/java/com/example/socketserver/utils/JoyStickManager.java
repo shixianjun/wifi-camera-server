@@ -1,6 +1,7 @@
 package com.example.socketserver.utils;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,9 +59,11 @@ public class JoyStickManager implements View.OnTouchListener {
 
     public void getJoyStickDirection() {
         int direction = joystick.get8Direction();
-        int speed = (int) (joystick.getDistance() / 1.875) + 20;
-        speed = (speed > 80) ? 80 : speed;
+        int speed = (int) (joystick.getDistance() / 1.875) ;//+ 20;
+        speed = (speed > 10) ? 10 : speed;
         speed = (speed < 0) ? 0 : speed;
+
+        Log.d("Speed", "speed======================="+speed);
 
         if (listener != null) {
             if (direction == JoyStickView.STICK_UP) {

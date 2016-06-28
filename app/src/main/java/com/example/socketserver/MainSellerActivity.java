@@ -386,8 +386,9 @@ public class MainSellerActivity extends BaseFragmentActivity implements
     }
 
     public void sendStop(){
+        Log.d("server","sendStop=========================");
         connectionManager.sendMovement(Command.STOP);
-        connectionManager.sendMovement(Command.STOP);
+       // connectionManager.sendMovement(Command.STOP);
     }
 
 }

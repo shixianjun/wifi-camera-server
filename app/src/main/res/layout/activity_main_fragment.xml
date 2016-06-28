@@ -122,6 +122,8 @@
             android:background="@color/gray" />
     </LinearLayout>
 
+
+
     <RelativeLayout
         android:id="@+id/layout_joystick"
         android:layout_width="@dimen/controller_size"
