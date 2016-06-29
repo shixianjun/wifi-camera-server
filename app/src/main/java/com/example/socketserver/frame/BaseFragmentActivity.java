@@ -49,7 +49,7 @@ public class BaseFragmentActivity extends FragmentActivity {
 
     @Override
     protected void onDestroy() {
-        Log.d(TAG, "onDestroy");
+//        Log.d(TAG, "onDestroy");
         super.onDestroy();
     }
 

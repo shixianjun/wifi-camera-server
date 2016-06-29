@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:orientation="vertical">
 
     <!--<EditText-->
@@ -12,15 +13,63 @@
     <!--android:layout_toRightOf="@+id/TextView_ip_tips"-->
     <!--android:ems="10"-->
     <!--android:text="192.168.1.232" />-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray" />
+        <TextView
+            android:id="@+id/init__area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentLeft="true"
 
+            android:text="初始化相关" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="3dp">
+
+
+        <Button
+            android:id="@+id/button_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox_server_start"
+            android:text="初始化" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray" />
         <TextView
             android:id="@+id/take_pahoto_area"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
             android:layout_alignParentLeft="true"
 
             android:text="拍照相关" />
@@ -34,7 +83,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="3dp">
 
 
         <Button
@@ -62,7 +112,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp">
-
+        <View
+            android:layout_width="30dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray" />
         <TextView
             android:id="@+id/play_music_area"
             android:layout_width="wrap_content"
@@ -79,7 +133,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="3dp">
     <Button
         android:id="@+id/button_playsong"
         android:layout_width="wrap_content"
@@ -104,37 +159,41 @@
         android:text="暂停" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp">-->
+        <!--<View-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@color/gray" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-
-            android:text="控制相关" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_gravity="center_vertical"
-            android:background="@color/gray" />
-    </LinearLayout>
+            <!--android:text="控制相关" />-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@color/gray" />-->
+    <!--</LinearLayout>-->
 
 
 
-    <RelativeLayout
-        android:id="@+id/layout_joystick"
-        android:layout_width="@dimen/controller_size"
-        android:layout_height="@dimen/controller_size"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/image_button_bg" >
-    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/layout_joystick"-->
+        <!--android:layout_width="@dimen/controller_size"-->
+        <!--android:layout_height="@dimen/controller_size"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@drawable/image_button_bg" >-->
+    <!--</RelativeLayout>-->
     <!--<EditText-->
     <!--android:id="@+id/EditText_port"-->
     <!--android:layout_width="wrap_content"-->

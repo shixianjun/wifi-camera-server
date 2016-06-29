@@ -1,34 +1,19 @@
 package com.example.socketserver.frame;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-import com.example.socketserver.MainActivity;
 import com.example.socketserver.MainSellerActivity;
 import com.example.socketserver.R;
-import com.example.socketserver.constant.Command;
-import com.example.socketserver.utils.JoyStickManager;
 
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
@@ -36,11 +21,11 @@ import java.util.ArrayList;
 /**
  *
  */
-public class HomeControl extends BaseFragment implements OnClickListener, JoyStickManager.JoyStickEventListener {
+public class HomeControl extends BaseFragment implements OnClickListener{
 
     public static String FRAGMENT_TAG = HomeControl.class.getSimpleName();
 
-    private Button button_play = null, button_play1 = null, button_pause = null;
+    private Button button_play = null,button_buttoninit=null, button_play1 = null, button_pause = null;
     private Button button_buttonfocus, button_take_photo, button_button_flash;
     //	private EditText et_ip = null;
 //	private EditText et_port = null;
@@ -67,10 +52,10 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
     boolean serverrun = true;
 
     MainSellerActivity activity;
-    int screenHeight;
-    private JoyStickManager joyStickManager;
+//    int screenHeight;
+//    private JoyStickManager joyStickManager;
 
-    private RelativeLayout layoutJoyStick;
+//    private RelativeLayout layoutJoyStick;
 
 
     @Override
@@ -127,11 +112,15 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
 //	}
 
     public void init() {
+
+
+        button_buttoninit = (Button) activity.findViewById(R.id.button_init);
         button_buttonfocus = (Button) activity.findViewById(R.id.button_focus);
         button_take_photo = (Button) activity.findViewById(R.id.button_takephoto);
         button_button_flash = (Button) activity.findViewById(R.id.button_flash);
         //car_stop = (Button) activity.findViewById(R.id.car_stop);
 
+        button_buttoninit.setOnClickListener(this);
         button_buttonfocus.setOnClickListener(this);
         button_take_photo.setOnClickListener(this);
         button_button_flash.setOnClickListener(this);
@@ -141,11 +130,11 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
         button_buttonfocus.setOnClickListener(this);
         button_take_photo.setOnClickListener(this);
         button_button_flash.setOnClickListener(this);
-        screenHeight = activity.getWindowManager().getDefaultDisplay().getHeight();
-        screenHeight=screenHeight*4/5;
-        layoutJoyStick = (RelativeLayout) activity.findViewById(R.id.layout_joystick);
-        joyStickManager = new JoyStickManager(activity, layoutJoyStick, screenHeight);
-        joyStickManager.setJoyStickEventListener(this);
+//        screenHeight = activity.getWindowManager().getDefaultDisplay().getHeight();
+//        screenHeight=screenHeight*4/5;
+//        layoutJoyStick = (RelativeLayout) activity.findViewById(R.id.layout_joystick);
+//        joyStickManager = new JoyStickManager(activity, layoutJoyStick, screenHeight);
+//        joyStickManager.setJoyStickEventListener(this);
 //		et_ip = (EditText)activity.findViewById(R.id.editText_ip);
 //		et_port = (EditText)activity.findViewById(R.id.EditText_port);
 //		et_conent = (EditText)activity.findViewById(R.id.EditText_content);
@@ -158,6 +147,8 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
         button_play.setOnClickListener(this);
         button_play1.setOnClickListener(this);
         button_pause.setOnClickListener(this);
+
+
 
 
 //		et_ip.setText(dest_ip);
@@ -178,13 +169,14 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
                 break;
             case R.id.button_focus:
                 activity.requestAutoFocus();
+
                 break;
             case R.id.button_takephoto:
                 activity.requestTakePhoto();
                 break;
-            //case R.id.car_stop:
-             //   activity.sendStop();
-             //   break;
+            case R.id.button_init:
+                activity.requestInitCar();
+                break;
             case R.id.button_flash:
 //				activity.requstFlash();
                 break;
@@ -196,6 +188,7 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
     public void onDestroy() {
         serverThread = null;
         serverrun = false;
+        super.onDestroy();
 //        try {
 //            if (ss != null)
 //                ss.close();
@@ -208,49 +201,49 @@ public class HomeControl extends BaseFragment implements OnClickListener, JoySti
 
 
     }
-
-    @Override
-    public void onJoyStickUp(int speed) {
-        activity.sendMovement(Command.FORWARD, speed);
-    }
-
-    @Override
-    public void onJoyStickUpRight(int speed) {
-        activity.sendMovement(Command.FORWARD_RIGHT, speed);
-    }
-
-    @Override
-    public void onJoyStickUpLeft(int speed) {
-        activity.sendMovement(Command.FORWARD_LEFT, speed);
-    }
-
-    @Override
-    public void onJoyStickDown(int speed) {
-        activity.sendMovement(Command.BACKWARD, speed);
-    }
-
-    @Override
-    public void onJoyStickDownRight(int speed) {
-        activity.sendMovement(Command.BACKWARD_RIGHT, speed);
-    }
-
-    @Override
-    public void onJoyStickDownLeft(int speed) {
-        activity.sendMovement(Command.BACKWARD_LEFT, speed);
-    }
-
-    @Override
-    public void onJoyStickRight(int speed) {
-        activity.sendMovement(Command.RIGHT, speed);
-    }
-
-    @Override
-    public void onJoyStickLeft(int speed) {
-        activity.sendMovement(Command.LEFT, speed);
-    }
-
-    @Override
-    public void onJoyStickNone() {
-        activity.sendStop();
-    }
+//
+//    @Override
+//    public void onJoyStickUp(int speed) {
+//        activity.sendMovement(Command.FORWARD, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickUpRight(int speed) {
+//        activity.sendMovement(Command.FORWARD_RIGHT, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickUpLeft(int speed) {
+//        activity.sendMovement(Command.FORWARD_LEFT, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickDown(int speed) {
+//        activity.sendMovement(Command.BACKWARD, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickDownRight(int speed) {
+//        activity.sendMovement(Command.BACKWARD_RIGHT, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickDownLeft(int speed) {
+//        activity.sendMovement(Command.BACKWARD_LEFT, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickRight(int speed) {
+//        activity.sendMovement(Command.RIGHT, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickLeft(int speed) {
+//        activity.sendMovement(Command.LEFT, speed);
+//    }
+//
+//    @Override
+//    public void onJoyStickNone() {
+//        activity.sendStop();
+//    }
 }

@@ -367,6 +367,11 @@ public class MainSellerActivity extends BaseFragmentActivity implements
 
     }
 
+    public void requestInitCar(){
+        connectionManager.sendCommand(Command.INIT);
+
+    }
+
     public void requestTakePhoto() {
         connectionManager.sendCommand(Command.SNAP);
     }

@@ -1,3 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="F:\workspace_studio\SocketServer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="F:\workspace_studio\SocketServer\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-21.0.3_1ddecf303503852d27311eaa76cc3efd89c89b22.jar" />
+    </item>
+    <item
+        jar="F:\workspace_studio\SocketServer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1c3d0ed0543a82d5546d55a5389fd593f4fe6ac7">
+        <dex dex="F:\workspace_studio\SocketServer\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_004051ea85ccce7870ab35ddb6be9f8e6e41616e.jar" />
+    </item>
+    <item
+        jar="F:\workspace_studio\SocketServer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c88471ecf120b5a38049d94fa6301950b4b7f469">
+        <dex dex="F:\workspace_studio\SocketServer\app\build\intermediates\pre-dexed\debug\instant-run_b34340afb56fecb570f43f403e3e2c3492bcbfa8.jar" />
+    </item>
+    <item
+        jar="E:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="F:\workspace_studio\SocketServer\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3_704a340b9af7bcb3c02ad95d5aa67056e7d6206d.jar" />
+    </item>
+    <item
+        jar="F:\workspace_studio\SocketServer\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="F:\workspace_studio\SocketServer\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3_6b7453aa9c8913993ea4a9902ed59eb3efa827a9.jar" />
+    </item>
+    <item
+        jar="F:\workspace_studio\SocketServer\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="F:\workspace_studio\SocketServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-21.0.3_daa34afa84d8af376463de09cc90400e03794b79.jar" />
+    </item>
+
+</items>

@@ -178,8 +178,8 @@ public class ConnectActivity extends Activity implements Runnable,
 			Log.e("APActivity", "CONNECTED");
 			wifiInfo = wifiManager.getConnectionInfo();
 			ip = intToIp(wifiInfo.getIpAddress());
-			et.setText("获取本地地址");
-			destip.setText(ip);
+			et.setText("本机："+ip);
+			destip.setText("连接小车端手机……");
 
 			try {
 				ds = new MulticastSocket(8093);

@@ -36,6 +36,7 @@ public class Command {
     public static final int MESSAGE_DOWNLEFT = 16;
     public static final int MESSAGE_LEFT = 17;
     public static final int MESSAGE_UPLEFT = 18;
+    public static final int MESSAGE_INIT = 21;
 
     public static final String FORWARD = "UU";
     public static final String FORWARD_RIGHT = "UR";
@@ -46,6 +47,7 @@ public class Command {
     public static final String RIGHT = "RR";
     public static final String LEFT = "LL";
     public static final String STOP = "SS";
+    public static final String INIT = "IN";
 
 
 }

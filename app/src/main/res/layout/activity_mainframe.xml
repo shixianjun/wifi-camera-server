@@ -59,7 +59,7 @@
                 android:clickable="false"
                 android:contentDescription="@null"
                 android:scaleType="center"
-                android:text="遥控"
+                android:text="播放"
                 android:textColor="@drawable/icon_special"
                 android:textSize="24sp" />
 
@@ -90,7 +90,7 @@
                 android:clickable="false"
                 android:contentDescription="@null"
                 android:scaleType="center"
-                android:text="视频"
+                android:text="监控"
                 android:textColor="@drawable/icon_special"
                 android:textSize="24sp" />
 
